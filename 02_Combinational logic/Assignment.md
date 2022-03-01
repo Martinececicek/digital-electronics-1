@@ -5,13 +5,14 @@
 1. Karnaugh maps for other two functions:
 
    Greater than:
-
-  ![B_Greater_A](https://user-images.githubusercontent.com/80918583/156239540-86b09935-017d-4f4b-9d18-d32ee1be493c.jpg)
+   ![A_greater_B](https://user-images.githubusercontent.com/80918583/156239597-91d4dbcc-ff44-4943-8431-e1dbd7fb69b8.jpg)
+  
 
 
    Less than:
 
-   ![K-maps](images/kmap_empty.png)
+    ![B_Greater_A](https://user-images.githubusercontent.com/80918583/156239540-86b09935-017d-4f4b-9d18-d32ee1be493c.jpg)
+
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
