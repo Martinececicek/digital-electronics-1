@@ -6,7 +6,9 @@
 
    Greater than:
    
-     ![A_greater_B](https://user-images.githubusercontent.com/80918583/156239597-91d4dbcc-ff44-4943-8431-e1dbd7fb69b8.jpg)
+   ![InkedA_greater_B_LI](https://user-images.githubusercontent.com/80918583/156251239-8ef3c4d8-928d-43e4-aa3d-735ada89ee37.jpg)
+
+   
   
 
 
