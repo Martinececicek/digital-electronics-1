@@ -1,4 +1,4 @@
-# Lab 2: YOUR_FIRSTNAME LASTNAME
+# Lab 2: Martin Zárecký
 
 ### 2-bit comparator
 
@@ -6,7 +6,8 @@
 
    Greater than:
 
-   ![K-maps](images/kmap_empty.png)
+  ![B_Greater_A](https://user-images.githubusercontent.com/80918583/156239540-86b09935-017d-4f4b-9d18-d32ee1be493c.jpg)
+
 
    Less than:
 
