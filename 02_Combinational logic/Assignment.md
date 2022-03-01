@@ -57,5 +57,5 @@
    ![your figure]()
 
 3. Link to your public EDA Playground example:
-
+    2-bit Comparator: https://www.edaplayground.com/x/r6xc
    [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
