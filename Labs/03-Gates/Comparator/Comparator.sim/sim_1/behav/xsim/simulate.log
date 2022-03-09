@@ -1,0 +1,14 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Note: Stimulus process for 4-bit binary comparator started
+Time: 0 ps  Iteration: 0  Process: /tb_comparator_4bit/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/03-Gates/Comparator/Comparator.srcs/sim_1/new/tb_comparator_4bit.vhd
+Note: Test case with intentional error: 0011   0011
+Time: 200 ns  Iteration: 0  Process: /tb_comparator_4bit/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/03-Gates/Comparator/Comparator.srcs/sim_1/new/tb_comparator_4bit.vhd
+Error: Input combination 0011, 0011 FAILED
+Time: 300 ns  Iteration: 0  Process: /tb_comparator_4bit/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/03-Gates/Comparator/Comparator.srcs/sim_1/new/tb_comparator_4bit.vhd
+Note: Stimulus process started
+Time: 300 ns  Iteration: 0  Process: /tb_comparator_4bit/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/03-Gates/Comparator/Comparator.srcs/sim_1/new/tb_comparator_4bit.vhd
+Note: Test case for ID input: xxxx16
+Time: 300 ns  Iteration: 0  Process: /tb_comparator_4bit/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/03-Gates/Comparator/Comparator.srcs/sim_1/new/tb_comparator_4bit.vhd
+Note: Stimulus process finished
+Time: 400 ns  Iteration: 0  Process: /tb_comparator_4bit/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/03-Gates/Comparator/Comparator.srcs/sim_1/new/tb_comparator_4bit.vhd
