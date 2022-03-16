@@ -1,17 +1,99 @@
-# Lab 4: YOUR_FIRSTNAME LASTNAME
+# Lab 4: Martin Zárecký
 
 ### Seven-segment display decoder
 
 1. Listing of VHDL stimulus process from testbench file (`tb_hex_7seg.vhd`) with asserts. Verify all input combinations. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
-    p_stimulus : process
+      p_stimulus : process
     begin
         report "Stimulus process started" severity note;
 
-        -- First test case
+        -- test case 0.
         s_hex <= "0000"; wait for 50 ns;
         assert (s_seg = "0000001")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- test case 1.
+        s_hex <= "0001"; wait for 50 ns;
+        assert (s_seg = "1001111")
+        report "Input combination 0001 FAILED" severity error;
+        
+        -- test case 2.
+        s_hex <= "0010"; wait for 50 ns;
+        assert (s_seg = "0010010")
+        report "Input combination 0010 FAILED" severity error;
+        
+        -- test case 3.
+        s_hex <= "0011"; wait for 50 ns;
+        assert (s_seg = "0000110")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- test case 4.
+        s_hex <= "0100"; wait for 50 ns;
+        assert (s_seg = "1001100")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- test case 5.
+        s_hex <= "0101"; wait for 50 ns;
+        assert (s_seg = "0100100")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- test case 6.
+        s_hex <= "0110"; wait for 50 ns;
+        assert (s_seg = "0100000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- test case 7.
+        s_hex <= "0111"; wait for 50 ns;
+        assert (s_seg = "0001111")
+        report "Input combination 0000 FAILED" severity error;
+        
+        -- test case 8.
+        s_hex <= "1000"; wait for 50 ns;
+        assert (s_seg = "0000000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        
+        -- test case 9.
+        s_hex <= "1001"; wait for 50 ns;
+        assert (s_seg = "0000100")
+        report "Input combination 0000 FAILED" severity error;
+        
+        
+        -- test case A.
+        s_hex <= "1010"; wait for 50 ns;
+        assert (s_seg = "0001000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        
+        -- test case B.
+        s_hex <= "1011"; wait for 50 ns;
+        assert (s_seg = "1100000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        
+        -- test case C.
+        s_hex <= "1100"; wait for 50 ns;
+        assert (s_seg = "0110001")
+        report "Input combination 0000 FAILED" severity error;
+        
+        
+        -- test case D.
+        s_hex <= "1101"; wait for 50 ns;
+        assert (s_seg = "1000010")
+        report "Input combination 0000 FAILED" severity error;
+        
+        
+        -- test case E.
+        s_hex <= "1110"; wait for 50 ns;
+        assert (s_seg = "0110000")
+        report "Input combination 0000 FAILED" severity error;
+        
+        
+        -- test case F.
+        s_hex <= "1111"; wait for 50 ns;
+        assert (s_seg = "0111000")
         report "Input combination 0000 FAILED" severity error;
 
 
@@ -25,7 +107,7 @@
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![Screenshot 2022-03-09 102730](https://user-images.githubusercontent.com/80918583/157413207-40e3e52d-a848-4d9d-a374-f02aae9f162c.png)
 
 ### LED(7:4) indicators
 
@@ -33,17 +115,28 @@
 
    ```vhdl
    --------------------------------------------------------------------
-   -- Experiments on your own: LED(7:4) indicators
+   -- Display input value on LEDs
+    LED(3 downto 0) <= SW;
 
-   -- Turn LED(4) on if input value is equal to 0, ie "0000"
-   -- LED(4) <= `0` when WRITE YOUR CODE HERE
+    --------------------------------------------------------------------
+    -- Experiments on your own: LED(7:4) indicators
 
-   -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
-   -- LED(5) <= WRITE YOUR CODE HERE
+    -- Turn LED(4) on if input value is equal to 0, ie "0000"
+    LED(4) <= '0' when (SW= "0000") else '1';
 
-   -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-   -- LED(6) <= WRITE YOUR CODE HERE
+    -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
+    greater : process ( SW ) is
+      begin
+     if SW > "1010" then
+      LED(5) <= '1' ;
+      else
+      LED(5) <= '0' ;
+     end if ;
+     end process greater ;
 
-   -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
-   -- LED(7) <= WRITE YOUR CODE HERE
+    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
+    LED(6) <= '0' when(SW = "0001" or SW= "0011" or SW="0101" or SW="0111" or SW="1001") else '1';
+
+    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
+    LED(7) <= '0' when(SW="0001" or SW="0010" or SW="0100" or SW="1000") else '1';
    ```
