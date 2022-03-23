@@ -1,4 +1,4 @@
-# Lab 6: YOUR_FIRSTNAME LASTNAME
+# Lab 6: Martin Zárecký
 
 ### Bidirectional counter
 
@@ -19,9 +19,11 @@
 
             elsif (en_i = '1') then -- Test if counter is enabled
 
-                -- TEST COUNTER DIRECTION HERE
-
-                    s_cnt_local <= s_cnt_local + 1;
+                if (cnt_up_i = '1') then
+                    s_cnt_local <= s_cnt_local + 5;
+                else
+                    s_cnt_local <= s_cnt_local - 1;
+                end if;
             end if;
         end if;
     end process p_cnt_up_down;
@@ -29,7 +31,9 @@
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![your figure]() ![image](https://user-images.githubusercontent.com/80918583/159667895-ae14b054-bea4-4150-b0a8-470fa1641c45.png)
+                    ![image](https://user-images.githubusercontent.com/80918583/159668069-502ed79f-ecb1-4822-8e12-49877cf83a24.png)
+
 
 ### Two counters
 
