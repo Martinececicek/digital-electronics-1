@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 Vivado Simulator 2020.1
 Time resolution is 1 ps
 Note: Stimulus process started
 Time: 0 ps  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/06-gates/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
 Note: Stimulus process finished
 Time: 600 ns  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/06-gates/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+=======
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/06-gates/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+Note: Stimulus process finished
+Time: 600 ns  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: D:/Documents/xzarec01/digital-electronics-1/Labs/06-gates/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+>>>>>>> 0f419b36f4332e057172533ccde29961f59051d5
